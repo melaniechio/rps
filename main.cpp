@@ -15,12 +15,12 @@ int main(int argc, const char * argv[]) {
     std::string computer;
     
     std::string player;
-    std::cout << "welcome to rock, paper scissors! \n\nin this game, you will be playing against a computer.\n" << std::endl;
+    std::cout << "welcome to rock, paper scissors! \n\nin this game, you will be playing against a computer.\nthis will be played best out of 3!" << std::endl;
     
     int counter = 0;
     int win = 0;
     int lose = 0;
-    
+
     while(counter < 3){
         
         std::cout << "what will you play?" << std::endl;
@@ -71,10 +71,10 @@ int main(int argc, const char * argv[]) {
         }
     }
     if(win > lose){
-        std::cout << "\nyou win! " << win << " to " << lose << std::endl;
+        std::cout << "\nyou win! final score: " << win << " to " << lose << "." << std::endl;
     }
     else if (lose > win){
-        std::cout << "\nyou lose! " << lose << " to " << win << std::endl;
+        std::cout << "\nyou lose! final score: " << lose << " to " << win << "." << std::endl;
     }
     else{
         std::cout << "\nits a tie!" << std::endl;
